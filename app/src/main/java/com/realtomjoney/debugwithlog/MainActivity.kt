@@ -2,6 +2,7 @@ package com.realtomjoney.debugwithlog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import com.realtomjoney.debugwithlog.databinding.ActivityMainBinding
 
@@ -22,7 +23,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setBindings()
 
+        Log.d("MyTag", "Line 25")
         val lbl = myLabel!!
+
+        Log.d("MyTag", "Line 30")
     }
 
     private fun setBindings() {
