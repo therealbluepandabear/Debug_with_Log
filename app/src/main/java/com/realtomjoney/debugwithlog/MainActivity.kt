@@ -19,16 +19,11 @@ class MainActivity : AppCompatActivity() {
      */
     private lateinit var binding: ActivityMainBinding
 
-    var myLabel: TextView? = null
+    lateinit var myString: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setBindings()
-
-        Log.d(TAG, "Line 25")
-
-        Log.d(TAG, "Line 30")
-
-        Log.d(MainActivity::class.java.simpleName, "Value")
 
     }
 
