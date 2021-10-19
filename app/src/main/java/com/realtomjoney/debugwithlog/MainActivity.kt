@@ -25,9 +25,11 @@ class MainActivity : AppCompatActivity() {
         setBindings()
 
         Log.d(TAG, "Line 25")
-        val lbl = myLabel!!
 
         Log.d(TAG, "Line 30")
+
+        Log.d(MainActivity::class.java.simpleName, "Value")
+
     }
 
     private fun setBindings() {
